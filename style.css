@@ -69,3 +69,23 @@ nav ul {
  color: white;
  cursor: pointer;
 }
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 12px 24px;
+ background: var(--color-primary, #1a3c6e);
+}
+.nav-links {
+ display: flex;
+ gap: 20px;
+ list-style: none;
+}
+.nav-links a {
+ color: white;
+ text-decoration: none;
+}
+.nav-links a:hover {
+ text-decoration: underline;
+ opacity: 0.85;
+}
