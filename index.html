@@ -1,35 +1,90 @@
+<!DOCTYPE html>
 <head>
+    <title>Миний төсөл</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <nav class="navbar">
- <div class="logo">Миний төсөл</div>
- <ul class="nav-links">
- <li><a href="#about">Тухай</a></li>
- <li><a href="#products">Бүтээгдэхүүн</a></li>
- <li><a href="#contact">Холбоо барих</a></li>
- </ul>
-</nav>
-</header>
 <body>
-<div class="card-container">
- <div class="card">
- <img src="buuz.jpg" alt="Buuz">
- <h3>Buuz</h3>
- <p>Товч тайлбар</p>
- <span class="price">15,000₮</span>
- </div>
- <div class="card">
- <img src="Cujwan.JPG" alt="tsuivan">
- <h3>Tsuivan</h3>
- <p>Товч тайлбар</p>
- <span class="price">22,000₮</span>
- </div>
- <div class="card">
- <img src="huushuur.jpg" alt="huushuur">
- <h3>Huushuur</h3>
- <p>Товч тайлбар</p>
- <span class="price">18,000₮</span>
- </div>
-</div>
-</body> 
+    <div class="page-layout">
+        <!-- Header хэсэг -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">Миний төсөл</div>
+                <ul class="nav-links">
+                    <li><a href="#about">Тухай</a></li>
+                    <li><a href="#products">Бүтээгдэхүүн</a></li>
+                    <li><a href="#contact">Холбоо барих</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sidebar хэсэг (grid-template-areas турших зорилгоор) -->
+        <aside class="sidebar">
+            <h3>Ангилал</h3>
+            <ul>
+                <li><a href="#">Үндсэн хоол</a></li>
+                <li><a href="#">Уух зүйл</a></li>
+                <li><a href="#">Амттан</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main бүтээгдэхүүний галерей хэсэг -->
+        <main class="main-content" id="products">
+            <h2>Бүтээгдэхүүний галерей</h2>
+            <div class="card-container">
+                <!-- 1 дэх карт (Онцлох буюу том харагдах карт) -->
+                <div class="card featured-card">
+                    <img src="Cujwan.JPG" alt="Цуйван">
+                    <h3>Цуйван (Онцлох) </h3>
+                    <p>Шинэхэн махтай амтат Цуйван</p>
+                    <span class="price">22,000₮</span>
+                    <button>Сагслах</button>
+                </div>
+                <!-- 2 дахь карт -->
+                <div class="card">
+                    <img src="buuz.jpg" alt="Buuz">
+                    <h3>Бүх төрлийн Бууз</h3>
+                    <p>Товч тайлбар</p>
+                    <span class="price">15,000₮</span>
+                    <button>Сагслах</button>
+                </div>
+                <!-- 3 дахь карт -->
+                <div class="card">
+                    <img src="huushuur.jpg" alt="huushuur">
+                    <h3>Huushuur</h3>
+                    <p>Товч тайлбар</p>
+                    <span class="price">18,000₮</span>
+                    <button>Сагслах</button>
+                </div>
+                <!-- 4 дэх карт -->
+                <div class="card">
+                    <img src="bantan.jpg" alt="Bantan">
+                    <h3>Bantan</h3>
+                    <p>Халуун шөл</p>
+                    <span class="price">10,000₮</span>
+                    <button>Сагслах</button>
+                </div>
+                <!-- 5 дахь карт -->
+                <div class="card">
+                    <img src="tsai.jpg" alt="Suutei tsai">
+                    <h3>Сүүтэй цай</h3>
+                    <p>Уламжлалт амт</p>
+                    <span class="price">3,000₮</span>
+                    <button>Сагслах</button>
+                </div>
+                <!-- 6 дахь карт -->
+                <div class="card">
+                    <img src="boortsog.jpeg" alt="Boortsog">
+                    <h3>Боорцог</h3>
+                    <p>Шинэ шарсан</p>
+                    <span class="price">5,000₮</span>
+                    <button>Сагслах</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer хэсэг -->
+        <footer class="footer">
+            <p>&copy; 2026 Миний төсөл. Бүх эрх хуулиар хамгаалагдсан.</p>
+        </footer>
+    </div>
+</body>
